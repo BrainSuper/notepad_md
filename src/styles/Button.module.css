@@ -1,0 +1,11 @@
+.delete {
+    cursor: pointer;
+    border: none;
+    background-color: lightseagreen;
+    padding: 5px;
+    font-family: "Microsoft Sans Serif";
+    border-radius: 3px;
+    margin-left: 10px;
+    width: 50px;
+    text-align: center;
+}

@@ -1,0 +1,36 @@
+.note__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    min-height: 200px;
+    border: 1px solid black;
+    margin: 50px auto 0;
+}
+
+.note__wrapper textarea, .monitor {
+    width: 695px;
+    min-height: 169px;
+    border: none;
+}
+.note__wrapper textarea {
+    resize: none;
+}
+.monitor {
+    text-align: left;
+    font-family: "Microsoft Sans Serif";
+}
+
+.monitor code {
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    background-color: coral;
+    font-family: "Comic Sans MS";
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.monitor h1, p, h2, h3, h4, h5, h6 {
+    margin-left: 10px;
+
+}

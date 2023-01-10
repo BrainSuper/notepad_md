@@ -1,0 +1,27 @@
+.note__date {
+    width: 690px;
+    height: 30px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    align-items: center;
+}
+.date__wrapper {
+    margin-right: 350px;
+    width: 200px;
+
+}
+.created {
+    font-weight: bold;
+    height: 100%;
+    background-color: white;
+}
+.date {
+    background-color: lightseagreen;
+    padding: 3px;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bolder;
+
+}

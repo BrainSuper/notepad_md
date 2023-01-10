@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Note from "./components/Note";
+import {INote} from "./types/types";
+import NotesList from "./components/NotesList";
 
 function App() {
+    const [notes, setNotes] = useState<INote[]>([
+        {
+            id: 1,
+            text: 'Text Text Text Text Text Text Text Text Text Text Text Text Text ',
+            isChanging: false
+        },
+        {
+            id: 2,
+            text: 'Text Text Text Text Text Text Text Text Text Text Text Text Text ',
+            isChanging: false
+        }
+    ])
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <NotesList setNotes={setNotes} notes={notes}/>
+        <button className={'add__button'} onClick={() => {
+            const newNote = {
+                id: notes.length + 1,
+                text: '',
+                isChanging: false
+            }
+            setNotes([...notes, newNote])
+        }}>ADD NOTE</button>
     </div>
   );
 }
